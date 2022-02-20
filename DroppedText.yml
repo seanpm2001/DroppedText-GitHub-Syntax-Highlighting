@@ -1,0 +1,55 @@
+#
+# Syntax highlighting for DroppedText, used by GitHub
+#
+
+scopeName: source.drotex
+name: DroppedText
+fileTypes:
+- dropt
+- droptex
+- droptxt
+- drotex
+- drotxt
+- drtxt
+- dtxt
+- droppedtext
+- droppedtxt
+- droppedtex
+# 10 file extensions are available
+
+patterns:
+- # Line comments
+  begin: '//'
+  end: '$'
+  name: syntax.comment-default.drotex
+- # Configuration lines
+  begin: '/:'
+  end: ':\'
+  name: syntax.configline.drotex
+- # Encoding define
+  begin: '/:Encoding'
+  end: ':\'
+  name: syntax.encoding.drotex
+- # Operating system define
+  begin: '/:OS{'
+  end: '}:\'
+  name: syntax.osdefine_br.drotex
+- # Language spec define
+  begin: '/:DroppedTextSpec={"V'
+  end: '}:\'
+  name: syntax.languagespec-def.drotex
+- # File date define
+  begin: '/:FileDate:Y'
+  end: ':\'
+  name: syntax.filedate-def.drotex
+- # File extension define
+  begin: '/:FileExtension:*.'
+  end: ':\'
+  name: syntax-filecontainer-def.drotex
+- # Language define
+  begin: '/:FileLanguage:'
+  end: '{'
+  begin2: '}'
+  end2: ':\'
+# File version: 1 (2022 February 19th at 5:15 pm)
+# End of script
