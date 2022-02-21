@@ -21,8 +21,9 @@
 # XML
 *.xml linguist-detectable=true
 *.xml linguist-documentation=false
-*.tmLanguage linguist-detectable=true
-*.tmLanguage linguist-documentation=false
+# This may have been breaking the Linguist, as it was refusing to index anything
+# *.tmLanguage linguist-detectable=true
+# *.tmLanguage linguist-documentation=false
 # Makefile (GNU Make)
 *.mk linguist-detectable=false
 *.mk linguist-documentation=false
@@ -33,9 +34,9 @@
 *.makefile linguist-detectable=false
 *.makefile linguist-documentation=false
 # YAML
-*.yml linguist-detectable=false
+*.yml linguist-detectable=true
 *.yml linguist-documentation=false
-*.yaml linguist-detectable=false
+*.yaml linguist-detectable=true
 *.yaml linguist-documentation=false
 # WebVTT
 *.vtt linguist-detectable=false
@@ -74,6 +75,21 @@
 *.mdown linguist-documentation=false
 *.markdown linguist-detectable=false
 *.markdown linguist-documentation=false
+# Python
+*.py linguist-detectable=true
+*.py linguist-documentation=false
+*.pyi linguist-detectable=true
+*.pyi linguist-documentation=false
+*.pyc linguist-detectable=true
+*.pyc linguist-documentation=false
+*.pyd linguist-detectable=true
+*.pyd linguist-documentation=false
+*.pyo linguist-detectable=true
+*.pyo linguist-documentation=false
+*.pyw linguist-detectable=true
+*.pyw linguist-documentation=false
+*.pyz linguist-detectable=true
+*.pyz linguist-documentation=false
 # ROFF
 # Do not include, as it would become the 100% dominant language and would hide all the other languages as "other"
 *.0 linguist-detectable=false
@@ -84,9 +100,34 @@
 *.2 linguist-documentation=false
 *.3 linguist-detectable=false
 *.3 linguist-documentation=false
+*.roff linguist-detectable=false
+*.roff linguist-documentation=false
+*.groff linguist-detectable=false
+*.groff linguist-documentation=false
+# DroppedText
+*.dropt linguist-detectable=true
+*.dropt linguist-documentation=false
+*.droptex linguist-detectable=true
+*.droptex linguist-documentation=false
+*.droptxt linguist-detectable=true
+*.droptxt linguist-documentation=false
+*.drotex linguist-detectable=true
+*.drotex linguist-documentation=false
+*.drotxt linguist-detectable=true
+*.drotxt linguist-documentation=false
+*.drtxt linguist-detectable=true
+*.drtxt linguist-documentation=false
+*.dtxt linguist-detectable=true
+*.dtxt linguist-documentation=false
+*.droppedtext linguist-detectable=true
+*.droppedtext linguist-documentation=false
+*.droppedtxt linguist-detectable=true
+*.droppedtxt linguist-documentation=false
+*.droppedtex linguist-detectable=true
+*.droppedtex linguist-documentation=false
 # End of linguist script
 # File info
 # File type: gitattributes file (*.gitattributes)
-# File version: 3 (Saturday, 2022 February 19th at 5:21 pm)
-# Line count (including blank lines and compiler line): 93
+# File version: 3.0 (Sunday, 2022 February 20th at 4:27 pm)
+# Line count (including blank lines and compiler line): 134
 # End of script
